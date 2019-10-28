@@ -66,24 +66,5 @@
                 </configuration>
             </plugin>
         </plugins>
-
-        <extensions>
-            <!-- We upload our repo using ftp -->
-            <extension>
-                <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ftp</artifactId>
-                <version>1.0-beta-6</version>
-            </extension>
-        </extensions>
     </build>
-
-    <distributionManagement>
-        <!-- My repository which is the same I use for Javacord -->
-        <repository>
-            <id>javacord-repo</id>
-            <name>Javacord Repository</name>
-            <url>ftp://bastian-oppermann.de/</url>
-        </repository>
-    </distributionManagement>
-
 </project>
