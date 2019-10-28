@@ -92,4 +92,11 @@ public @interface Command {
      */
     boolean requiresMention() default false;
 
+    /**
+     * Gets the category that the command is in. Purely organizational.
+     *
+     * @return The category that the command is in.
+     */
+    String category() default "";
+
 }
