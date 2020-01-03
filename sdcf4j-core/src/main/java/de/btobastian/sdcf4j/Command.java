@@ -82,7 +82,7 @@ public @interface Command {
      *
      * @return Whether the command should be executed async or not.
      */
-    boolean async() default false;
+    boolean async() default true;
 
     /**
      * Gets whether the bot has to be mentioned to react to a command.
